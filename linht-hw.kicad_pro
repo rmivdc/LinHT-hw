@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.8,
-          "width": 0.9
+          "height": 0.64,
+          "width": 0.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -602,6 +602,10 @@
       {
         "netclass": "Narrow",
         "pattern": "/Keyboard/D."
+      },
+      {
+        "netclass": "Narrow",
+        "pattern": "GND"
       }
     ]
   },
@@ -848,6 +852,10 @@
     [
       "5f168690-b6ac-4b3d-aad0-4e97277dc85d",
       "Connectors"
+    ],
+    [
+      "ea9c8c93-65bf-40e7-998a-dd103a852bc2",
+      "GNSS"
     ]
   ],
   "text_variables": {}

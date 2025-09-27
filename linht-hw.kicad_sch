@@ -540,6 +540,28 @@
 		)
 		(uuid "fc087734-3735-4de9-90de-c63f393b7213")
 	)
+	(hierarchical_label "UART3_TX"
+		(shape output)
+		(at 163.83 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1bb867ac-c3ff-4ff6-bf73-9e7a13552363")
+	)
+	(hierarchical_label "UART3_RX"
+		(shape input)
+		(at 163.83 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23e49302-f7d4-48c3-ae93-e0acf912a392")
+	)
 	(sheet
 		(at 87.63 77.47)
 		(size 25.4 13.97)
@@ -1098,8 +1120,8 @@
 		)
 	)
 	(sheet
-		(at 127 38.1)
-		(size 36.83 91.44)
+		(at 127 26.67)
+		(size 36.83 102.87)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1114,7 +1136,7 @@
 		)
 		(uuid "9e50fe40-00b4-48a0-8ec6-ce79209e6a2d")
 		(property "Sheetname" "SoC"
-			(at 127 37.3884 0)
+			(at 127 25.9584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1798,6 +1820,48 @@
 			(project "linht-hw"
 				(path "/73efc1fc-21f6-4aef-9f73-508fe18fa32e"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 209.55 26.67)
+		(size 25.4 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "ea9c8c93-65bf-40e7-998a-dd103a852bc2")
+		(property "Sheetname" "GNSS"
+			(at 209.55 25.9584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gnss.kicad_sch"
+			(at 209.55 47.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "linht-hw"
+				(path "/73efc1fc-21f6-4aef-9f73-508fe18fa32e"
+					(page "9")
 				)
 			)
 		)

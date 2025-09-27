@@ -280,8 +280,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U1"
-				(at 0 1.6814 0)
+			(property "Reference" "GPIO4_IO[5]"
+				(at 0 1.1543 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -289,7 +289,7 @@
 				)
 			)
 			(property "Value" "MCM-iMX93"
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -315,6 +315,15 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2539,7 +2548,7 @@
 				(pin bidirectional line
 					(at 49.53 0 180)
 					(length 3.81)
-					(name ""
+					(name "UART3_RX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2611,7 +2620,7 @@
 				(pin bidirectional line
 					(at 49.53 -10.16 180)
 					(length 3.81)
-					(name ""
+					(name "UART3_TX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3743,10 +3752,6 @@
 		(uuid "18c4cc2e-51ac-4eb2-837d-c3f3f99ca0be")
 	)
 	(no_connect
-		(at 134.62 171.45)
-		(uuid "18ee4db2-77fc-4990-a006-c3b8c59d1d9d")
-	)
-	(no_connect
 		(at 143.51 123.19)
 		(uuid "20eae9f1-31bf-45b4-8218-4d37dd141b8e")
 	)
@@ -4029,10 +4034,6 @@
 	(no_connect
 		(at 44.45 133.35)
 		(uuid "f87c10d8-3031-46f5-96ee-6d8214f0ddf3")
-	)
-	(no_connect
-		(at 137.16 171.45)
-		(uuid "fc8ff364-46be-4b6b-9a7a-4067e7609178")
 	)
 	(bus_entry
 		(at 104.14 177.8)
@@ -4827,6 +4828,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 171.45) (xy 137.16 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b685ccf2-5123-4c46-97f0-b0e427de9b28")
+	)
+	(wire
+		(pts
 			(xy 88.9 40.64) (xy 88.9 45.72)
 		)
 		(stroke
@@ -4864,6 +4875,16 @@
 			(type default)
 		)
 		(uuid "bddf26cf-c161-4451-b683-d001462fe7a8")
+	)
+	(wire
+		(pts
+			(xy 143.51 105.41) (xy 148.59 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf534d0d-9240-4eb6-b045-dd038b724191")
 	)
 	(wire
 		(pts
@@ -5017,6 +5038,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 115.57) (xy 148.59 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2810e14-56cb-480b-b980-bf6388fc90f7")
+	)
+	(wire
+		(pts
 			(xy 209.55 68.58) (xy 209.55 69.85)
 		)
 		(stroke
@@ -5094,6 +5125,16 @@
 			(type default)
 		)
 		(uuid "f763a003-1075-4510-907c-6b54645c1da4")
+	)
+	(wire
+		(pts
+			(xy 134.62 171.45) (xy 134.62 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb7dc441-e374-4cff-8027-c25e0299e29e")
 	)
 	(wire
 		(pts
@@ -5638,6 +5679,17 @@
 		)
 		(uuid "75880d1c-0ce8-4505-8fb8-1ca5f1620287")
 	)
+	(hierarchical_label "UART3_RX"
+		(shape input)
+		(at 148.59 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79b0917e-24d8-4273-a946-479412873cba")
+	)
 	(hierarchical_label "SPI_CS_RF"
 		(shape output)
 		(at 101.6 40.64 90)
@@ -5660,6 +5712,17 @@
 		)
 		(uuid "8877827d-0a14-407f-ac58-08dee30b7956")
 	)
+	(hierarchical_label "UART3_TX"
+		(shape output)
+		(at 148.59 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c64caeb-236d-45f6-9335-a6f04e1038f9")
+	)
 	(hierarchical_label "I2S1_WS"
 		(shape output)
 		(at 78.74 177.8 270)
@@ -5681,6 +5744,17 @@
 			(justify left)
 		)
 		(uuid "951b66c1-82f2-4a00-b430-b86fc1f77761")
+	)
+	(hierarchical_label "WAKEUP_GNSS"
+		(shape output)
+		(at 134.62 177.8 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "96f9ad51-b932-4871-a4e0-9ed21d3072f0")
 	)
 	(hierarchical_label "LED_B"
 		(shape output)
@@ -5846,6 +5920,17 @@
 			(justify left)
 		)
 		(uuid "e91aa458-3494-4327-a920-11d7631fb165")
+	)
+	(hierarchical_label "RST_GNSS"
+		(shape output)
+		(at 137.16 177.8 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fe073e78-535f-475f-9442-b17732b842df")
 	)
 	(hierarchical_label "ON{slash}OFF"
 		(shape input)
@@ -6139,7 +6224,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3216a3c1-3801-4d78-b78d-46bfd311e540")
-		(property "Reference" "U1"
+		(property "Reference" "GPIO4_IO[5]1"
 			(at 93.98 104.2557 0)
 			(effects
 				(font
@@ -6698,7 +6783,7 @@
 		(instances
 			(project ""
 				(path "/73efc1fc-21f6-4aef-9f73-508fe18fa32e/9e50fe40-00b4-48a0-8ec6-ce79209e6a2d"
-					(reference "U1")
+					(reference "GPIO4_IO[5]1")
 					(unit 1)
 				)
 			)
